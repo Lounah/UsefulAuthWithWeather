@@ -1,0 +1,11 @@
+<!--
+    Я не знаю, как саппортить elevation на старых версиях,
+    поэтому просто добавляю этот Drawable
+-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient android:type="linear"
+        android:angle="270"
+        android:startColor="#d2d4d4d4"
+        android:endColor="#ffffff"
+        />
+</shape>
