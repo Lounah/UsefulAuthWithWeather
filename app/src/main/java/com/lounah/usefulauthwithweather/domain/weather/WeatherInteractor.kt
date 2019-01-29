@@ -1,6 +1,7 @@
 package com.lounah.usefulauthwithweather.domain.weather
 
 import com.lounah.usefulauthwithweather.core.Mapper
+import com.lounah.usefulauthwithweather.data.entity.WeatherBean
 import com.lounah.usefulauthwithweather.domain.weather.entity.Weather
 import io.reactivex.Single
 import javax.inject.Inject
