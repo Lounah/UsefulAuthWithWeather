@@ -5,6 +5,7 @@ import android.view.View
 import com.lounah.usefulauthwithweather.R
 import com.lounah.usefulauthwithweather.presentation.authentication.util.validator.CredentialsState
 import com.lounah.usefulauthwithweather.presentation.common.BaseFragment
+import com.lounah.usefulauthwithweather.util.AndroidUtilities
 import kotlinx.android.synthetic.main.fragment_login.*
 import javax.inject.Inject
 
@@ -54,6 +55,7 @@ class LoginFragment : BaseFragment() {
     private fun setUpLoginButton() {
         clearErrorFields()
         btn_log_in.setOnClickListener {
+            AndroidUtilities.hideKeyboard(root_fragment_login)
             viewModel.updateCredentials(et_email.text.toString(), et_password.text.toString())
         }
     }
