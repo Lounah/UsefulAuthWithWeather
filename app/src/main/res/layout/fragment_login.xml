@@ -3,26 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/root_fragment_login"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <FrameLayout
-        android:id="@+id/view_login_loading"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/white"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ProgressBar
-            android:layout_width="74dp"
-            android:layout_height="74dp"
-            android:layout_gravity="center"
-            android:gravity="center" />
-
-    </FrameLayout>
+    android:layout_height="match_parent"
+    android:background="@color/white">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar_login"
@@ -32,7 +14,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:navigationIcon="@drawable/ic_arrow_back_blue_24_px"
+        app:navigationIcon="@drawable/ic_arrow_back_black_24_px"
         app:title="@string/authentication"
         app:titleTextAppearance="@style/TitleText">
 
@@ -112,7 +94,7 @@
 
             </android.support.design.widget.TextInputLayout>
 
-            <Button
+            <android.support.v7.widget.AppCompatButton
                 android:id="@+id/btn_log_in"
                 style="@style/Widget.AppCompat.Button"
                 android:layout_width="match_parent"
@@ -121,6 +103,7 @@
                 android:background="@color/orange"
                 android:fontFamily="sans-serif-medium"
                 android:text="@string/log_in"
+                android:textAllCaps="true"
                 android:textColor="@color/white"
                 android:textSize="13sp"
                 android:textStyle="bold" />
@@ -134,5 +117,25 @@
 
         </LinearLayout>
     </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/view_login_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_semi_transparent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ProgressBar
+            android:layout_width="74dp"
+            android:layout_height="74dp"
+            android:layout_gravity="center"
+            android:gravity="center" />
+
+    </FrameLayout>
+
 
 </android.support.constraint.ConstraintLayout>

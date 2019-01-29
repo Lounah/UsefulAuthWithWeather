@@ -1,6 +1,7 @@
 package com.lounah.usefulauthwithweather.presentation.authentication.login
 
 import android.arch.lifecycle.Observer
+import android.util.Log
 import android.view.View
 import com.lounah.usefulauthwithweather.R
 import com.lounah.usefulauthwithweather.presentation.authentication.util.validator.CredentialsState
@@ -26,6 +27,7 @@ class LoginFragment : BaseFragment() {
         viewModel.errorState.observe(this, Observer { error ->
             error?.let {
                 showToast(R.string.error_fetching_weather)
+                Log.i(TAG, error.message)
             }
         })
 

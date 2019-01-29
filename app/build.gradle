@@ -14,6 +14,7 @@ android {
         versionName "0.1.1 от " + getDate()
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         buildConfigField("String", "WEATHER_API_ENDPOINT", "\"https://api.openweathermap.org/\"")
+        vectorDrawables.useSupportLibrary = true
     }
 
     lintOptions {
