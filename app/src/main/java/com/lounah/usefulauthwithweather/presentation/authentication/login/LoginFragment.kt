@@ -1,6 +1,7 @@
 package com.lounah.usefulauthwithweather.presentation.authentication.login
 
 import android.arch.lifecycle.Observer
+import android.text.method.PasswordTransformationMethod
 import android.util.Log
 import android.view.View
 import com.lounah.usefulauthwithweather.R
@@ -55,6 +56,7 @@ class LoginFragment : BaseFragment() {
     }
 
     private fun setUpLoginButton() {
+        et_password.transformationMethod = AndroidUtilities.BiggerDotPasswordTransformationMethod
         clearErrorFields()
         btn_log_in.setOnClickListener {
             AndroidUtilities.hideKeyboard(root_fragment_login)
