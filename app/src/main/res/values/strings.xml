@@ -3,7 +3,7 @@
 
     <!-- Auth screen -->
     <string name="invalid_username">Некорректный e-mail</string>
-    <string name="invalid_password">Некорректный пароль</string>
+    <string name="invalid_password">Пароль должен содержать 6 символов, одну цифру, одну строчную и одну заглавную букву</string>
     <string name="create_account">Создать</string>
     <string name="authentication">Авторизация</string>
     <string name="log_in">Войти</string>
@@ -11,6 +11,6 @@
     <string name="hint_password">Пароль</string>
 
     <!-- Weather -->
-    <string name="weather_snack">Погода в Лондоне: %s</string>
+    <string name="weather_snack">Погода в Лондоне: %s \u2103</string>
     <string name="error_fetching_weather">Произошла ошибка при загрузке погоды</string>
 </resources>

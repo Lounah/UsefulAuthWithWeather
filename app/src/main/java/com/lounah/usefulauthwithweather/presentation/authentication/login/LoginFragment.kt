@@ -1,6 +1,7 @@
 package com.lounah.usefulauthwithweather.presentation.authentication.login
 
 import android.arch.lifecycle.Observer
+import android.view.View
 import com.lounah.usefulauthwithweather.R
 import com.lounah.usefulauthwithweather.presentation.authentication.util.validator.CredentialsState
 import com.lounah.usefulauthwithweather.presentation.common.BaseFragment
@@ -28,8 +29,12 @@ class LoginFragment : BaseFragment() {
         })
 
         viewModel.loadingState.observe(this, Observer { isLoading ->
-            isLoading?.let {
-                // TODO: handle loading state...
+            isLoading?.let {shouldShowLoading ->
+                if (shouldShowLoading) {
+                    view_login_loading.visibility = View.VISIBLE
+                } else {
+                    view_login_loading.visibility = View.GONE
+                }
             }
         })
 
@@ -41,7 +46,7 @@ class LoginFragment : BaseFragment() {
 
         viewModel.weather.observe(this, Observer { weather ->
             weather?.let {
-                showSnackBar(root_fragment_login, weather.temp)
+                showSnackBar(root_fragment_login, String.format(resources.getString(R.string.weather_snack), weather.temp))
             }
         })
     }
