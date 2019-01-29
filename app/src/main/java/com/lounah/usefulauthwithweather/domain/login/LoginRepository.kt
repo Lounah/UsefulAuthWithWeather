@@ -1,0 +1,3 @@
+package com.lounah.usefulauthwithweather.domain.login
+
+interface LoginRepository

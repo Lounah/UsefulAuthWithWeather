@@ -3,7 +3,10 @@ package com.lounah.usefulauthwithweather.presentation.authentication.login
 import android.arch.lifecycle.LiveData
 import android.arch.lifecycle.MutableLiveData
 import android.arch.lifecycle.Transformations
+import com.lounah.usefulauthwithweather.core.SchedulersProvider
 import com.lounah.usefulauthwithweather.core.Validator
+import com.lounah.usefulauthwithweather.domain.weather.WeatherInteractor
+import com.lounah.usefulauthwithweather.domain.weather.entity.Weather
 import com.lounah.usefulauthwithweather.presentation.authentication.util.validator.CredentialsState
 import com.lounah.usefulauthwithweather.presentation.common.BaseViewModel
 import javax.inject.Inject
