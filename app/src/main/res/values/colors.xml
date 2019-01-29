@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+
+    <!-- Base -->
+    <color name="white_dark">#f4f4f4</color>
+    <color name="white">#ffffff</color>
+    <color name="blue_light">#4e92df</color>
+    <color name="orange">#ff9b00</color>
+    
+    <!-- App -->
+    <color name="colorPrimary">@color/white</color>
+    <color name="colorPrimaryDark">@color/white_dark</color>
+    <color name="colorAccent">@color/blue_light</color>
 </resources>
