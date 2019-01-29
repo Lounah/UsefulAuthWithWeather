@@ -1,6 +1,5 @@
 package com.lounah.usefulauthwithweather.presentation.authentication
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.lounah.usefulauthwithweather.R
 import com.lounah.usefulauthwithweather.presentation.authentication.login.LoginFragment
