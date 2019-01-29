@@ -6,9 +6,12 @@
     <color name="white">#ffffff</color>
     <color name="blue_light">#4e92df</color>
     <color name="orange">#ff9b00</color>
-    
+    <color name="greyish_brown">#414141</color>
+
     <!-- App -->
     <color name="colorPrimary">@color/white</color>
     <color name="colorPrimaryDark">@color/white_dark</color>
     <color name="colorAccent">@color/blue_light</color>
+    <color name="colorTextTitle">@color/greyish_brown</color>
+
 </resources>
