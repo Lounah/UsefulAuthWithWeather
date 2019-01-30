@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Useful Auth App</string>
+
+    <!-- Auth screen -->
+    <string name="invalid_username">Invalid email</string>
+    <string name="invalid_password">Password must contain at least 6 letters and 1 uppercase</string>
+    <string name="create_account">Create</string>
+    <string name="authentication">Authorization</string>
+    <string name="log_in">Log in</string>
+    <string name="hint_email">E-mail</string>
+    <string name="hint_password">Password</string>
+
+    <!-- Weather -->
+    <string name="weather_snack">Current temperature in London: %s \u2103</string>
+    <string name="error_fetching_weather">Error loading weather</string>
+</resources>
